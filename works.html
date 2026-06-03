@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta name="description" content="Flexoby Media — Previous Works. Browse our full portfolio of video edits across talking head, VSL, short form, and more."/>
+<title>Previous Works — Flexoby Media</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
+<noscript><link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet"/></noscript>
+<link rel="dns-prefetch" href="https://i.ytimg.com"/>
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#06060a;color:#fff;font-family:'Barlow',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased;cursor:none}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit}
+:root{
+  --bg:#06060a;--s1:#0d0d16;--s2:#131320;
+  --bd:rgba(255,255,255,.07);--gr:#8888a0;--gr2:#44445a;
+  --ac:#F8BC58;--ac2:#E8951A;
+  --G:linear-gradient(180deg,#F8BC58 0%,#E8951A 100%);
+  --GT:linear-gradient(135deg,#fff5e0 0%,#F8BC58 50%,#E8951A 100%);
+  --r:16px;--rs:10px;
+}
+::-webkit-scrollbar{width:3px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:#F8BC58;border-radius:3px}
+
+/* CURSOR */
+#cd{position:fixed;width:8px;height:8px;border-radius:50%;background:var(--ac);pointer-events:none;z-index:99999;transform:translate(-50%,-50%);transition:width .2s,height .2s,opacity .2s}
+#cr{position:fixed;width:38px;height:38px;border-radius:50%;border:1.5px solid rgba(248,188,88,.55);pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .4s cubic-bezier(.23,1,.32,1),height .4s cubic-bezier(.23,1,.32,1),border-color .3s,opacity .3s}
+body.hov #cd{width:6px;height:6px;opacity:.5}
+body.hov #cr{width:64px;height:64px;border-color:rgba(248,188,88,.8);background:rgba(248,188,88,.06)}
+@media(hover:none){#cd,#cr{display:none}body{cursor:auto}}
+
+/* NAV */
+nav{position:fixed;top:16px;left:50%;transform:translateX(-50%);width:calc(100% - 48px);max-width:1300px;z-index:1000;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;border-radius:14px;background:rgba(6,6,10,.18);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border:1px solid rgba(255,255,255,.06);box-shadow:0 2px 24px rgba(0,0,0,.2);transition:all .4s}
+nav.sc{background:rgba(6,6,10,.45);border-color:rgba(255,255,255,.08);box-shadow:0 4px 32px rgba(0,0,0,.35)}
+.nl{display:flex;align-items:center;gap:12px}
+.nl img{height:44px;border-radius:8px}
+.nl-t{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.4rem;letter-spacing:.06em;text-transform:uppercase}
+.nr{display:flex;align-items:center;gap:16px}
+.nm{display:flex;gap:28px;list-style:none;align-items:center;position:absolute;left:50%;transform:translateX(-50%)}
+.nm a{color:var(--gr);font-size:.79rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;transition:color .3s;position:relative}
+.nm a::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1.5px;background:var(--G);transition:width .35s}
+.nm a:hover{color:#fff}
+.nm a:hover::after{width:100%}
+.nm a.active{color:#fff}
+.nm a.active::after{width:100%}
+.nb{background:linear-gradient(180deg,#F8BC58 0%,#E8951A 100%);color:#0A0400!important;padding:10px 22px;border-radius:8px;font-weight:900;letter-spacing:.04em;transition:opacity .18s ease,transform .18s ease;position:relative}
+.nb::after{display:none!important}
+.nb:hover{opacity:.85;transform:translateY(-1px)}
+.nh{display:none;flex-direction:column;gap:5px;padding:4px;z-index:1001;position:relative}
+.nh span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:.3s}
+.nh.o span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.nh.o span:nth-child(2){opacity:0}
+.nh.o span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+
+/* MOBILE BAR */
+.mb{display:none;position:fixed;bottom:0;left:0;right:0;z-index:999;padding:12px 16px 20px;background:rgba(6,6,10,.97);border-top:1px solid rgba(248,188,88,.25);backdrop-filter:blur(16px)}
+.mb-i{display:flex;gap:10px}
+.mb .bp{flex:1;justify-content:center;padding:14px 10px;font-size:.84rem}
+
+/* BUTTONS */
+.bp{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(180deg,#F8BC58 0%,#E8951A 100%);color:#0A0400;font-family:'Barlow',sans-serif;font-weight:900;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase;padding:16px 34px;border-radius:8px;border:none;transition:filter .18s ease,transform .18s ease,box-shadow .18s ease;white-space:nowrap;-webkit-tap-highlight-color:transparent;position:relative;cursor:pointer}
+.bp:hover{filter:brightness(1.08);transform:translateY(-2px);box-shadow:0 8px 28px rgba(248,188,88,.35)}
+.bs{display:inline-flex;align-items:center;gap:8px;background:transparent;color:rgba(255,255,255,.75);font-family:'Barlow',sans-serif;font-weight:700;font-size:.88rem;letter-spacing:.06em;text-transform:uppercase;padding:16px 30px;border-radius:8px;border:1.5px solid rgba(255,255,255,.2);transition:all .18s ease;white-space:nowrap;cursor:pointer}
+.bs:hover{color:#fff;border-color:rgba(255,255,255,.5);background:rgba(255,255,255,.06);transform:translateY(-1px)}
+
+/* LAYOUT */
+.cnt{max-width:1300px;margin:0 auto}
+.slb{display:inline-flex;align-items:center;gap:10px;font-size:.68rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--ac);margin-bottom:14px}
+.slb::before{content:'';display:block;width:24px;height:1.5px;background:var(--G)}
+.sh2{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2rem,4.5vw,3.4rem);line-height:.95;text-transform:uppercase;letter-spacing:-.01em;margin-bottom:16px}
+.gt{background:var(--GT);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.sd{color:var(--gr);font-size:.96rem;line-height:1.72;max-width:560px}
+.tc{text-align:center}.tc .sd{margin:0 auto}.tc .slb{justify-content:center}
+
+/* SCROLL REVEAL */
+.sr{opacity:0;transform:translateY(34px);transition:opacity .75s ease,transform .75s ease}
+.sr.in{opacity:1;transform:translateY(0)}
+.d1{transition-delay:.07s!important}.d2{transition-delay:.14s!important}.d3{transition-delay:.21s!important}
+.d4{transition-delay:.28s!important}.d5{transition-delay:.35s!important}
+
+/* PAGE HERO */
+#phero{padding:160px 44px 80px;text-align:center;position:relative;overflow:hidden;background:#06060a}
+.ph-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:7px 20px;margin-bottom:28px;font-size:.68rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.ph-title{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(3rem,8vw,6.5rem);line-height:.92;text-transform:uppercase;letter-spacing:-.025em;margin-bottom:18px}
+.ph-sub{color:rgba(255,255,255,.4);font-size:.9rem;line-height:1.7;max-width:520px;margin:0 auto}
+@keyframes fU{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+.a1{animation:fU .9s ease .05s both}.a2{animation:fU .9s ease .2s both}.a3{animation:fU .9s ease .35s both}
+
+/* FILTER TABS */
+.filters{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:52px}
+.ftab{display:inline-flex;align-items:center;gap:7px;padding:10px 22px;border-radius:8px;background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.1);color:var(--gr);font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;transition:all .25s}
+.ftab:hover{color:#fff;border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.07)}
+.ftab.on{background:rgba(248,188,88,.12);border-color:rgba(248,188,88,.5);color:var(--ac)}
+.ftab .fc{font-size:.65rem;background:rgba(248,188,88,.18);color:var(--ac);border-radius:4px;padding:2px 7px;font-weight:800}
+.ftab.on .fc{background:rgba(248,188,88,.3)}
+
+/* VIDEO GRID — 16:9 */
+.vg16{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+/* VIDEO GRID — 9:16 shorts */
+.vg9{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+
+.vc{position:relative;border-radius:var(--r);overflow:hidden;background:#000;border:1.5px solid rgba(255,255,255,.07);transition:transform .45s cubic-bezier(.34,1.56,.64,1),border-color .4s,box-shadow .45s;cursor:pointer}
+.vc:hover{transform:translateY(-6px) scale(1.015);border-color:rgba(248,188,88,.35);box-shadow:0 24px 56px rgba(0,0,0,.65),0 0 0 1px rgba(248,188,88,.18)}
+
+/* aspect wrappers */
+.vf16{position:relative;aspect-ratio:16/9;width:100%}
+.vf9{position:relative;aspect-ratio:9/16;width:100%}
+
+/* category pill on card */
+.vpill{position:absolute;top:10px;left:10px;z-index:5;font-size:.58rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:3px 10px;border-radius:6px;background:rgba(6,6,10,.82);border:1px solid rgba(248,188,88,.3);color:var(--ac);backdrop-filter:blur(6px)}
+
+/* YOUTUBE FACADE */
+.ytf{position:absolute;inset:0;cursor:pointer;background:#000;overflow:hidden}
+.ytf img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
+.vc:hover .ytf img{transform:scale(1.06)}
+.ytf .ytp{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:56px;height:56px;background:rgba(0,0,0,.72);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:transform .25s,background .25s;border:2px solid rgba(255,255,255,.35)}
+.vc:hover .ytf .ytp{background:rgba(248,188,88,.88);border-color:transparent;transform:translate(-50%,-50%) scale(1.12)}
+.ytf .ytp svg{fill:#fff;width:20px;height:20px;margin-left:3px}
+
+/* VIDEO CARD INFO */
+.vi{padding:14px 16px 16px}
+.vt{font-weight:700;font-size:.9rem;margin-bottom:4px;color:#fff}
+.vd{font-size:.74rem;color:var(--gr2)}
+
+/* SECTION */
+.ws{padding:80px 44px}
+.ws+.ws{padding-top:0}
+
+/* TICKER */
+.tkw{overflow:hidden;border-top:1px solid var(--bd);border-bottom:1px solid var(--bd);padding:14px 0;background:rgba(248,188,88,.015)}
+.tkt{display:flex;width:max-content;animation:tkA 32s linear infinite}
+.tkit{display:flex;align-items:center;gap:18px;padding:0 28px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gr2);white-space:nowrap}
+.tkd{width:5px;height:5px;border-radius:50%;background:var(--ac);flex-shrink:0}
+@keyframes tkA{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* CTA BAR */
+#wcta{background:var(--s1);border-top:1px solid var(--bd);padding:80px 44px;text-align:center}
+.ctag{display:inline-flex;align-items:center;gap:8px;font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ac);margin-bottom:20px}
+.ctgd{width:6px;height:6px;border-radius:50%;background:var(--ac);animation:dpA 1.5s ease infinite;display:inline-block}
+@keyframes dpA{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.6)}}
+.cth{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:clamp(2.4rem,6vw,5rem);line-height:.92;text-transform:uppercase;letter-spacing:-.025em;margin-bottom:20px}
+.cts{color:var(--gr);font-size:1rem;margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.7}
+
+/* FOOTER */
+footer{background:#030306;border-top:1px solid var(--bd);padding:36px 44px}
+.fi{max-width:1300px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.flogo{display:flex;align-items:center;gap:10px}
+.flogo img{height:28px;border-radius:4px}
+.flt{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.1rem;letter-spacing:.08em;text-transform:uppercase}
+.fcp{font-size:.74rem;color:var(--gr2)}
+
+/* RESPONSIVE */
+@media(max-width:1100px){.vg16{grid-template-columns:repeat(2,1fr)}.vg9{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:768px){
+  .ws{padding:60px 20px}.ws+.ws{padding-top:0}
+  #phero{padding:130px 20px 60px}
+  .vg16{grid-template-columns:repeat(2,1fr)}
+  .vg9{grid-template-columns:repeat(2,1fr)}
+  nav{top:10px;width:calc(100% - 24px);padding:10px 16px;border-radius:12px}
+  .nm{display:none;position:fixed;top:0;left:0;right:0;bottom:0;transform:none;background:rgba(6,6,10,.98);backdrop-filter:blur(20px);flex-direction:column;justify-content:center;align-items:center;padding:80px 20px 100px;z-index:1000;gap:0}
+  .nr .nb{display:none}
+  .nm.open{display:flex}
+  .nm li{width:100%;text-align:center;border-bottom:1px solid var(--bd)}
+  .nm a{display:block;padding:20px;font-size:1.1rem;color:#fff}
+  .nm a::after{display:none}
+  .nh{display:flex}.mb{display:block}body{padding-bottom:80px}
+}
+@media(max-width:480px){.vg16{grid-template-columns:1fr}.vg9{grid-template-columns:repeat(2,1fr)}}
+
+/* Film grain */
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9990;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.015;mix-blend-mode:overlay}
+</style>
+</head>
+<body>
+<div id="cd"></div>
+<div id="cr"></div>
+
+<nav id="nav">
+  <div class="nl">
+    <img src="https://assets.cdn.filesafe.space/es7676mPUEXoI94uSh1w/media/69f7ba64dd67e758c0f612d1.png" alt="Flexoby Media"/>
+    <span class="nl-t">Flexoby Media</span>
+  </div>
+  <ul class="nm" id="nm">
+    <li><a href="index (13).html">Home</a></li>
+    <li><a href="index (13).html#reels">Recent Work</a></li>
+    <li><a href="works.html" class="active">Previous Works</a></li>
+    <li><a href="index (13).html#rv">Reviews</a></li>
+    <li><a href="index (13).html#team">Team</a></li>
+  </ul>
+  <div class="nr">
+    <a href="https://wa.me/8801770275500" target="_blank" class="nb">Get Sample Edit</a>
+    <div class="nh" id="nh"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<div class="mb">
+  <div class="mb-i">
+    <a href="https://wa.me/8801770275500" target="_blank" class="bp">&#9889; Let's Chat Directly</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section id="phero">
+  <div class="ph-badge a1">&#127916; Full Portfolio</div>
+  <h1 class="ph-title a2">Previous <span class="gt">Works</span></h1>
+  <p class="ph-sub a3">Every project we've delivered — talking head, VSL, short form reels, and more. Click any video to watch.</p>
+</section>
+
+<!-- TICKER -->
+<div class="tkw"><div class="tkt">
+  <div class="tkit"><span class="tkd"></span>Talking Head Editing</div><div class="tkit"><span class="tkd"></span>VSL Production</div>
+  <div class="tkit"><span class="tkd"></span>YouTube Long Form</div><div class="tkit"><span class="tkd"></span>Instagram Reels</div>
+  <div class="tkit"><span class="tkd"></span>TikTok Shorts</div><div class="tkit"><span class="tkd"></span>Motion Graphics</div>
+  <div class="tkit"><span class="tkd"></span>Color Grading</div><div class="tkit"><span class="tkd"></span>Podcast Editing</div>
+  <div class="tkit"><span class="tkd"></span>Talking Head Editing</div><div class="tkit"><span class="tkd"></span>VSL Production</div>
+  <div class="tkit"><span class="tkd"></span>YouTube Long Form</div><div class="tkit"><span class="tkd"></span>Instagram Reels</div>
+  <div class="tkit"><span class="tkd"></span>TikTok Shorts</div><div class="tkit"><span class="tkd"></span>Motion Graphics</div>
+  <div class="tkit"><span class="tkd"></span>Color Grading</div><div class="tkit"><span class="tkd"></span>Podcast Editing</div>
+</div></div>
+
+<!-- LONG FORM EDITS -->
+<section class="ws">
+  <div class="cnt">
+    <div class="sr tc" style="margin-bottom:48px">
+      <div class="slb">Long Form</div>
+      <h2 class="sh2">Talking Head &amp; <span class="gt">Full Edits</span></h2>
+      <p class="sd">YouTube videos, VSLs, interviews, podcasts — polished for maximum watch time and engagement.</p>
+    </div>
+    <div class="vg16">
+
+      <div class="vc sr">
+        <div class="vf16">
+          <div class="ytf" data-vid="FUyP9SSU-GI">
+            <img src="https://i.ytimg.com/vi/FUyP9SSU-GI/hqdefault.jpg" alt="Talking Head Edit" loading="lazy"/>
+            <div class="ytp"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="vpill">Talking Head</div>
+        </div>
+        <div class="vi"><div class="vt">Talking Head Edit</div><div class="vd">Engaging cuts, motion graphics &amp; captions</div></div>
+      </div>
+
+      <div class="vc sr d1">
+        <div class="vf16">
+          <div class="ytf" data-vid="VnihId5h45U">
+            <img src="https://i.ytimg.com/vi/VnihId5h45U/hqdefault.jpg" alt="VSL Production" loading="lazy"/>
+            <div class="ytp"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="vpill">VSL</div>
+        </div>
+        <div class="vi"><div class="vt">VSL Video Production</div><div class="vd">High-converting sales video with storytelling</div></div>
+      </div>
+
+      <div class="vc sr d2">
+        <div class="vf16">
+          <div class="ytf" data-vid="aAjEgu3eahA">
+            <img src="https://i.ytimg.com/vi/aAjEgu3eahA/hqdefault.jpg" alt="Social Media Content" loading="lazy"/>
+            <div class="ytp"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="vpill">Social Media</div>
+        </div>
+        <div class="vi"><div class="vt">Social Media Content</div><div class="vd">Optimised for platform engagement</div></div>
+      </div>
+
+      <div class="vc sr d1">
+        <div class="vf16">
+          <div class="ytf" data-vid="3kRoK47U-UU">
+            <img src="https://i.ytimg.com/vi/3kRoK47U-UU/hqdefault.jpg" alt="Brand Video" loading="lazy"/>
+            <div class="ytp"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="vpill">Brand Video</div>
+        </div>
+        <div class="vi"><div class="vt">Brand Video</div><div class="vd">Premium production for brand identity</div></div>
+      </div>
+
+      <div class="vc sr d2">
+        <div class="vf16">
+          <div class="ytf" data-vid="gpST8sj6G_k">
+            <img src="https://i.ytimg.com/vi/gpST8sj6G_k/hqdefault.jpg" alt="Short Form Viral" loading="lazy"/>
+            <div class="ytp"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="vpill">Viral Edit</div>
+        </div>
+        <div class="vi"><div class="vt">Short Form Viral</div><div class="vd">Fast-paced edits built for virality</div></div>
+      </div>
+
+      <div class="vc sr d3">
+        <div class="vf16">
+          <div class="ytf" data-vid="XN1d3Gpk4lk">
+            <img src="https://i.ytimg.com/vi/XN1d3Gpk4lk/hqdefault.jpg" alt="YouTube Edit" loading="lazy"/>
+            <div class="ytp"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="vpill">YouTube</div>
+        </div>
+        <div class="vi"><div class="vt">YouTube Long Form</div><div class="vd">Retention-optimised with b-roll &amp; graphics</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SHORT FORM REELS -->
+<section class="ws" style="background:var(--s1);padding-top:80px">
+  <div class="cnt">
+    <div class="sr tc" style="margin-bottom:48px">
+      <div class="slb">Short Form</div>
+      <h2 class="sh2">Reels &amp; <span class="gt">Shorts</span></h2>
+      <p class="sd">Vertical short-form content crafted for Instagram Reels, YouTube Shorts, and TikTok.</p>
+    </div>
+    <div class="vg9">
+
+      <div class="vc sr">
+        <div class="vf9">
+          <div class="ytf" data-vid="_Q2Al1i6WzQ">
+            <img src="https://i.ytimg.com/vi/_Q2Al1i6WzQ/hqdefault.jpg" alt="Reel 1" loading="lazy"/>
+            <div class="ytp"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="vpill">Reel</div>
+        </div>
+        <div class="vi"><div class="vt">Short Form Edit #1</div><div class="vd">Instagram / YouTube Shorts</div></div>
+      </div>
+
+      <div class="vc sr d1">
+        <div class="vf9">
+          <div class="ytf" data-vid="YZAxoi33b-Y">
+            <img src="https://i.ytimg.com/vi/YZAxoi33b-Y/hqdefault.jpg" alt="Reel 2" loading="lazy"/>
+            <div class="ytp"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="vpill">Reel</div>
+        </div>
+        <div class="vi"><div class="vt">Short Form Edit #2</div><div class="vd">Instagram / YouTube Shorts</div></div>
+      </div>
+
+      <div class="vc sr d2">
+        <div class="vf9">
+          <div class="ytf" data-vid="KaR9bac3HBo">
+            <img src="https://i.ytimg.com/vi/KaR9bac3HBo/hqdefault.jpg" alt="Reel 3" loading="lazy"/>
+            <div class="ytp"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="vpill">Reel</div>
+        </div>
+        <div class="vi"><div class="vt">Short Form Edit #3</div><div class="vd">Instagram / YouTube Shorts</div></div>
+      </div>
+
+      <div class="vc sr d3">
+        <div class="vf9">
+          <div class="ytf" data-vid="KfKjwtqjRqc">
+            <img src="https://i.ytimg.com/vi/KfKjwtqjRqc/hqdefault.jpg" alt="Reel 4" loading="lazy"/>
+            <div class="ytp"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="vpill">Reel</div>
+        </div>
+        <div class="vi"><div class="vt">Short Form Edit #4</div><div class="vd">Instagram / YouTube Shorts</div></div>
+      </div>
+
+      <div class="vc sr d2">
+        <div class="vf9">
+          <div class="ytf" data-vid="y3whTiXYEm4">
+            <img src="https://i.ytimg.com/vi/y3whTiXYEm4/hqdefault.jpg" alt="Reel 5" loading="lazy"/>
+            <div class="ytp"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="vpill">Reel</div>
+        </div>
+        <div class="vi"><div class="vt">Short Form Edit #5</div><div class="vd">Instagram / YouTube Shorts</div></div>
+      </div>
+
+      <div class="vc sr d3">
+        <div class="vf9">
+          <div class="ytf" data-vid="b-BAyJyzrIo">
+            <img src="https://i.ytimg.com/vi/b-BAyJyzrIo/hqdefault.jpg" alt="Reel 6" loading="lazy"/>
+            <div class="ytp"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+          </div>
+          <div class="vpill">Reel</div>
+        </div>
+        <div class="vi"><div class="vt">Short Form Edit #6</div><div class="vd">Instagram / YouTube Shorts</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="wcta">
+  <div class="cnt sr">
+    <div class="ctag"><span class="ctgd"></span>Ready to start?</div>
+    <h2 class="cth">Like what you see?<br/><span class="gt">Let's work together.</span></h2>
+    <p class="cts">Get a free sample edit on your own footage. No commitment needed.</p>
+    <div style="display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap">
+      <a href="https://wa.me/8801770275500" target="_blank" class="bp" style="padding:18px 44px;font-size:.95rem">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Let's Chat Directly
+      </a>
+      <a href="index (13).html" class="bs">&#8592; Back to Home</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fi">
+    <div class="flogo">
+      <img src="https://assets.cdn.filesafe.space/es7676mPUEXoI94uSh1w/media/69f7ba64dd67e758c0f612d1.png" alt="Flexoby Media"/>
+      <span class="flt">Flexoby Media</span>
+    </div>
+    <p class="fcp">&copy; 2026 Flexoby Media. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+/* CURSOR */
+var cd=document.getElementById("cd"),cr=document.getElementById("cr");
+var mx=0,my=0,rx=0,ry=0;
+if(window.matchMedia("(hover:hover)").matches){
+  document.addEventListener("mousemove",function(e){mx=e.clientX;my=e.clientY;});
+  (function loop(){
+    cd.style.left=mx+"px";cd.style.top=my+"px";
+    rx+=(mx-rx)*0.12;ry+=(my-ry)*0.12;
+    cr.style.left=rx+"px";cr.style.top=ry+"px";
+    requestAnimationFrame(loop);
+  })();
+  document.querySelectorAll("a,button,.vc,.ytf").forEach(function(el){
+    el.addEventListener("mouseenter",function(){document.body.classList.add("hov");});
+    el.addEventListener("mouseleave",function(){document.body.classList.remove("hov");});
+  });
+}
+
+/* NAV scroll */
+var nav=document.getElementById("nav");
+window.addEventListener("scroll",function(){nav.classList.toggle("sc",window.scrollY>50);},{passive:true});
+var nh=document.getElementById("nh"),nm=document.getElementById("nm");
+nh.addEventListener("click",function(){nh.classList.toggle("o");nm.classList.toggle("open");});
+nm.querySelectorAll("a").forEach(function(a){
+  a.addEventListener("click",function(){nh.classList.remove("o");nm.classList.remove("open");});
+});
+
+/* YOUTUBE FACADE */
+document.querySelectorAll('.ytf').forEach(function(el){
+  el.addEventListener('click',function(){
+    var vid=el.dataset.vid;
+    var ifr=document.createElement('iframe');
+    ifr.src='https://www.youtube.com/embed/'+vid+'?autoplay=1&rel=0&modestbranding=1&controls=1&playsinline=1';
+    ifr.setAttribute('allow','autoplay;fullscreen;encrypted-media;picture-in-picture');
+    ifr.setAttribute('allowfullscreen','');
+    ifr.style.cssText='position:absolute;inset:0;width:100%;height:100%;border:none;display:block';
+    el.style.cursor='default';
+    el.innerHTML='';
+    el.appendChild(ifr);
+  });
+});
+
+/* SCROLL REVEAL */
+var obs=new IntersectionObserver(function(entries){
+  entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");obs.unobserve(e.target);}});
+},{threshold:0.06,rootMargin:"0px 0px -30px 0px"});
+document.querySelectorAll(".sr").forEach(function(el){obs.observe(el);});
+</script>
+</body>
+</html>
